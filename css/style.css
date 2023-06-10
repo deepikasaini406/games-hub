@@ -179,7 +179,7 @@ body {
 }
 
 .about-us {
-    width: 23%;
+    /* width: 23%; */
     top: 25%;
     left: 40%;
     padding: 50px;
@@ -296,13 +296,20 @@ body {
     border-radius: 30px;
     font-size: 15px;
     font-weight: 300;
+    transition: all linear 0.3s;
 
 }
 
-.game-list ul li:first-child {
+.game-list ul li.selected {
     border: 2px solid #ff9800;
     color: #ffffff;
     background: #ff9800;
+}
+
+.game-list ul li:hover {
+    border: 2px solid #f5b85c;
+    color: #ffffff;
+    background: #f5b85c;
 }
 
 .game-row {
@@ -349,4 +356,28 @@ body {
 
 .img-grid img {
     border-radius: 50%;
+}
+
+.copyright {
+    background: #212121;
+    padding: 1em 0;
+    color: #fff;
+    text-align: center;
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+.hide-animation{
+    scale: 0;
+    opacity: 0;
+}
+
+.game-banner{
+    transition: all linear 0.3s;
 }
